@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<title>
+  
+    个人建站指北（施工中）
+  
+</title>
+
+<meta name="description" content="总览信息时代，能有一个自己网站，总是一件十分酷炫的事。然而，即使是一个非常普通的个人博客站，其背后隐藏的各种技术仍然足够让普通人望而却步。即使是相关专业的学生，学起来相关的内容也不免踩一些坑，无谓的浪费许多时间。所以今天在这里，本人打算从头到尾，把建站的整个原理，流程，个人花了很长时间踩过的各种坑，都给大家记录下来。如果能够因此帮到一个两个有相关需求的朋友，那就能体现到这篇博文的价值了。">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="个人建站指北（施工中）">
+<meta property="og:url" content="https://shao11.com/2019/11/06/To-build-a-personal-website/index.html">
+<meta property="og:site_name" content="Elysium">
+<meta property="og:description" content="总览信息时代，能有一个自己网站，总是一件十分酷炫的事。然而，即使是一个非常普通的个人博客站，其背后隐藏的各种技术仍然足够让普通人望而却步。即使是相关专业的学生，学起来相关的内容也不免踩一些坑，无谓的浪费许多时间。所以今天在这里，本人打算从头到尾，把建站的整个原理，流程，个人花了很长时间踩过的各种坑，都给大家记录下来。如果能够因此帮到一个两个有相关需求的朋友，那就能体现到这篇博文的价值了。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-06T13:56:10.259Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="个人建站指北（施工中）">
+<meta name="twitter:description" content="总览信息时代，能有一个自己网站，总是一件十分酷炫的事。然而，即使是一个非常普通的个人博客站，其背后隐藏的各种技术仍然足够让普通人望而却步。即使是相关专业的学生，学起来相关的内容也不免踩一些坑，无谓的浪费许多时间。所以今天在这里，本人打算从头到尾，把建站的整个原理，流程，个人花了很长时间踩过的各种坑，都给大家记录下来。如果能够因此帮到一个两个有相关需求的朋友，那就能体现到这篇博文的价值了。">
+
+
+  <link rel="alternative" href="/atom.xml" title="Elysium" type="application/atom+xml">
+
+
+
+  <link rel="icon" href="/images/favicon.ico">
+
+
+<link rel="stylesheet" href="/perfect-scrollbar/css/perfect-scrollbar.min.css">
+<link rel="stylesheet" href="/styles/main.css">
+
+
+
+
+
+
+</head>
+<body class="monochrome">
+  <div class="mobile-header">
+  <button class="sidebar-toggle" type="button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="title" href="/">Elysium</a>
+</div>
+
+  <div class="main-container">
+    <div class="sidebar">
+  <div class="header">
+    <h1 class="title"><a href="/">Elysium</a></h1>
+    
+      <p class="subtitle">
+        God&#39;s in his heaven — All&#39;s right with the world!
+      </p>
+    
+    <div class="info">
+      <div class="content">
+        
+          <div class="description">现实流放者的故乡</div>
+        
+        
+          <div class="author">ssthe</div>
+        
+      </div>
+      
+        <div class="avatar">
+          
+            <a href="/about"><img src="https://i.loli.net/2019/11/06/Nk5mQiTFDMrLOB4.jpg"></a>
+          
+        </div>
+      
+    </div>
+  </div>
+  <div class="body">
+    
+      
+        <ul class="nav">
+          
+            
+              <li class="category-list-container">
+                <a href="javascript:;">分类</a>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/教程/">教程</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/笔记/">笔记</a><span class="category-list-count">1</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="tag-list-container">
+                <a href="javascript:;">标签</a>
+                <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="archive-list-container">
+                <a href="javascript:;">归档</a>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">1</span></li></ul>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="/" title="Homepage">Homepage</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/archives" title="By Year">By Year</a>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="https://github.com/ssthe" title="Github" target="_blank" rel="noopener">Github</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/atom.xml" title="RSS">RSS</a>
+              </li>
+            
+          
+        </ul>
+      
+    
+  </div>
+</div>
+
+    <div class="main-content">
+      
+        <div style="max-width: 1000px">
+      
+          <article id="post-To-build-a-personal-website" class="article article-type-post">
+  
+    <h1 class="article-header">
+      个人建站指北（施工中）
+    </h1>
+  
+  
+
+  <div class="article-info">
+    <span class="article-date">
+  2019-11-06
+</span>
+
+    
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/教程/">教程</a></li></ul>
+	</span>
+
+
+    
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</span>
+
+
+  </div>
+  <div class="article-entry">
+    <h3 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h3><p>信息时代，能有一个自己网站，总是一件十分酷炫的事。然而，即使是一个非常普通的个人博客站，其背后隐藏的各种技术仍然足够让普通人望而却步。即使是相关专业的学生，学起来相关的内容也不免踩一些坑，无谓的浪费许多时间。<br>所以今天在这里，本人打算从头到尾，把建站的整个原理，流程，个人花了很长时间踩过的各种坑，都给大家记录下来。如果能够因此帮到一个两个有相关需求的朋友，那就能体现到这篇博文的价值了。<br><a id="more"></a></p>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>建造一个个人网站，我们需要一些什么东西呢？<br>这个问题，需要我们先简单了解网站运行的原理之后才能回答。<br>网站的原理是什么呢？当我们打开浏览器，输入一个域名，敲击回车，一个网页就出现在我们面前了。一切都显得那么简单直接。<br>然而，“输入一个域名并敲击回车”，和“网页出现在我们面前”，这两件事之间其实发生了很多事情。当我们输入了域名之后，浏览器是不知道这个域名对应的ip地址的，因此浏览器会将域名打包发送给一个特殊的服务器，我们称之为DNS（域名服务器）。DNS会查找自己的数据库，在找到该域名对应的服务器ip地址后，将这个ip地址返回给浏览器。浏览器再根据这个ip地址，向该网站真正的服务器发送请求。网站服务器收到请求后，将网页需要的文件再返回给浏览器，浏览器就能根据这些文件构筑出一个网站了。<br>也就是说，整个流程其实是：  </p>
+<ol>
+<li>输入域名</li>
+<li>浏览器发送请求给DNS</li>
+<li>DNS返回网站服务器ip</li>
+<li>浏览器发送请求给网站服务器</li>
+<li>网站服务器返回文件给浏览器</li>
+<li>浏览器根据这些文件构筑网站</li>
+</ol>
+<p>当然，现在的网站上有非常多的内容，大流量的网站需要考虑的问题也更多，这个原理仅仅只是最基本的内容，主要是用来辅助我们理解我们需要的东西的。<br>从这个流程当中，可以看出，我们需要以下几个东西：  </p>
+<ol>
+<li>网站域名</li>
+<li>DNS域名解析服务</li>
+<li>网站服务器</li>
+</ol>
+<p>网站域名是由一些域名注册管理机构管理的，如果我们想要拥有一个自己的域名，就需要向域名注册商租用域名的使用权。比较有名的域名注册商之一是<a href="https://www.godaddy.com" target="_blank" rel="noopener">Godaddy</a>，很多读者们比较熟悉的公司，例如<a href="https://domains.google" target="_blank" rel="noopener">谷歌</a>，<a href="https://dnspod.cloud.tencent.com/" target="_blank" rel="noopener">腾讯</a>等等也都有提供域名注册服务。<br>网站服务器也是类似的处理方式，需要你去一些服务器租赁商那里租用服务器。真正的服务器往往大而笨重，花费会非常高。而对于大部分的用户来说，他们的网站很小，很多时候用不到那么多的流量和性能。因此，不少厂商推出了一种新的租赁服务器的方式，也就是VPS（虚拟私人服务器）。这种服务器并非真正的物理服务器，而是通过软件的手段分享了真正的服务器的资源，从而大幅度的降低了租赁服务器的门槛。比较出名的提供VPS服务的厂商有<a href="https://www.vultr.com" target="_blank" rel="noopener">Vultr</a>，<a href="https://www.digitalocean.com" target="_blank" rel="noopener">DigitalOcean</a>，<a href="https://www.linode.com" target="_blank" rel="noopener">Linode</a>，如果你偏爱大厂的话，也可以选择<a href="https://cloud.google.com" target="_blank" rel="noopener">谷歌</a>，<a href="https://aws.amazon.com" target="_blank" rel="noopener">亚马逊</a>。这种虚拟化的好处还有很多，在此不继续赘述，有兴趣的同学可以自行查阅相关资料拓展阅读。<br>除了真的去租用一个服务器以外，还有不少更懒的方式去托管个人网站，其中不少还是免费的。有些网站例如<a href="https://www.netlify.com" target="_blank" rel="noopener">Netlify</a>，不仅可以免费托管静态网站，还能顺便帮你解决域名解析的问题，可以说是个人网站的福音了。不过，各方面综合考量的话我则是推荐<a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a>，这个博客目前就是托管在GitHub Pages上的，具体的实现方式见后文。<br>那么域名解析服务呢？刚才我们提到过，浏览器需要DNS服务器的帮助才能把域名转化为真正的服务器ip地址。那么当我们建造一个个人网站的时候，就需要让DNS服务器知道我们的域名对应的服务器地址是哪个。有一些域名注册商会顺带包揽域名解析服务，但如果你想使用自己另外找的域名解析服务，也是完全可以的。在域名注册商那里购买域名的时候会注册一个账户，登录这个账户就可以管理你的域名了，其中一个必要的功能就是设置域名解析服务。其它更具体的知识和设置呢，我们喝杯茶，接着说。</p>
+<h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><h3 id="托管"><a href="#托管" class="headerlink" title="托管"></a>托管</h3><h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><h3 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h3>
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
+        
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
+    </a>
+  </div>
+
+
+    
+
+  </footer>
+</article>
+
+
+
+
+
+
+
+          <div class="main-footer">
+  
+    © 2019 Elysium - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
+  
+</div>
+
+      
+        </div>
+      
+    </div>
+  </div>
+  <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="/PhotoSwipe/photoswipe.css">
+  <link rel="stylesheet" href="/PhotoSwipe/default-skin/default-skin.css">
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/PhotoSwipe/photoswipe.js"></script>
+  <script src="/PhotoSwipe/photoswipe-ui-default.js"></script>
+
+
+<script src="/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
+<script src="/scripts/main.js"></script>
+
+</body>
+</html>
