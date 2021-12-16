@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<title>
+  
+    个人建站指北
+  
+</title>
+
+<meta name="description" content="总览信息时代，能有一个自己的网站，总是一件十分酷炫的事。然而，即使是一个非常普通的个人博客站，其背后隐藏的各种技术仍然足够让普通人望而却步。就算是学习计算机相关专业的学生，在接触和学习相关的内容的时候也不免踩一些坑，无谓的浪费许多宝贵的时间。所以今天在这里，本人打算从头到尾，给各位读者总结建站的整个原理，流程，以及一些个人花了很长时间踩过的各种坑。如果能够因此帮到一个两个有相关需求的朋友，那就能体">
+<meta property="og:type" content="article">
+<meta property="og:title" content="个人建站指北">
+<meta property="og:url" content="https://shao11.com/2019/11/06/To-build-a-personal-website/index.html">
+<meta property="og:site_name" content="Elysium">
+<meta property="og:description" content="总览信息时代，能有一个自己的网站，总是一件十分酷炫的事。然而，即使是一个非常普通的个人博客站，其背后隐藏的各种技术仍然足够让普通人望而却步。就算是学习计算机相关专业的学生，在接触和学习相关的内容的时候也不免踩一些坑，无谓的浪费许多宝贵的时间。所以今天在这里，本人打算从头到尾，给各位读者总结建站的整个原理，流程，以及一些个人花了很长时间踩过的各种坑。如果能够因此帮到一个两个有相关需求的朋友，那就能体">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-11-06T12:12:48.000Z">
+<meta property="article:modified_time" content="2021-12-16T08:54:34.429Z">
+<meta property="article:author" content="ssthe">
+<meta property="article:tag" content="network">
+<meta name="twitter:card" content="summary">
+
+
+  <link rel="alternative" href="/atom.xml" title="Elysium" type="application/atom+xml">
+
+
+
+  <link rel="icon" href="/images/favicon.ico">
+
+
+
+<link rel="stylesheet" href="/perfect-scrollbar/css/perfect-scrollbar.min.css">
+
+
+<link rel="stylesheet" href="/styles/main.css">
+
+
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-115778221-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <!-- End Google Analytics -->
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body
+  
+    class="monochrome"
+  
+  >
+  <div class="mobile-header">
+  <button class="sidebar-toggle" type="button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="title" href="/">Elysium</a>
+</div>
+
+  <div class="main-container">
+    <div class="sidebar">
+  <div class="header">
+    <h1 class="title"><a href="/">Elysium</a></h1>
+    
+      <p class="subtitle">
+        God&#39;s in his heaven — All&#39;s right with the world!
+      </p>
+    
+    <div class="info">
+      <div class="content">
+        
+          <div class="description">现实流放者的故乡</div>
+        
+        
+          <div class="author">ssthe</div>
+        
+      </div>
+      
+        <div class="avatar">
+          
+            <a href="/about"><img src="/images/avatar.jpg"></a>
+          
+        </div>
+      
+    </div>
+  </div>
+  <div class="body">
+    
+      
+        <ul class="nav">
+          
+            
+              <li class="category-list-container">
+                <a href="javascript:;">分类</a>
+                <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><span class="category-list-count">1</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="tag-list-container">
+                <a href="javascript:;">标签</a>
+                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/network/" rel="tag">network</a><span class="tag-list-count">2</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="archive-list-container">
+                <a href="javascript:;">归档</a>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">1</span></li></ul>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="/" title="Homepage" external="false">Homepage</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/archives" title="By Year" external="false">By Year</a>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="https://github.com/ssthe" title="Github" target="_blank" rel="noopener">Github</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/atom.xml" title="RSS" external="false">RSS</a>
+              </li>
+            
+          
+        </ul>
+      
+    
+  </div>
+</div>
+
+    <div class="main-content">
+      
+        <div style="max-width: 1000px">
+      
+          <article id="post-To-build-a-personal-website" class="article article-type-post">
+  
+    <h1 class="article-header">
+      个人建站指北
+    </h1>
+  
+  
+
+  <div class="article-info">
+    <span class="article-date">
+  2019-11-06
+</span>
+
+    
+	<span class="article-category tagcloud">
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li></ul>
+	</span>
+
+
+    
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/network/" rel="tag">network</a></li></ul>
+	</span>
+
+
+  </div>
+  <div class="article-entry">
+    <h3 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h3><p>信息时代，能有一个自己的网站，总是一件十分酷炫的事。然而，即使是一个非常普通的个人博客站，其背后隐藏的各种技术仍然足够让普通人望而却步。就算是学习计算机相关专业的学生，在接触和学习相关的内容的时候也不免踩一些坑，无谓的浪费许多宝贵的时间。<br>所以今天在这里，本人打算从头到尾，给各位读者总结建站的整个原理，流程，以及一些个人花了很长时间踩过的各种坑。如果能够因此帮到一个两个有相关需求的朋友，那就能体现到这篇博文的价值了。<br>本篇文章主要面向对于计算机网络了解不多的新手，所以我会着重介绍概念，理论以及推荐相关的工具，网站，作指路之效。具体工具的使用步骤，一部分后续可能会另外更新专门的文章；即使没有，有了这些关键词之后在互联网上应该也很容易找到相关资料，请善用搜索引擎。  </p>
+<span id="more"></span>
+
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><h4 id="浏览器的背后"><a href="#浏览器的背后" class="headerlink" title="浏览器的背后"></a>浏览器的背后</h4><p>建造一个个人网站，我们需要一些什么东西呢？这个问题，需要我们先简单了解网站运行的原理之后才能回答。<br>让我们打开浏览器，输入一个域名，敲击回车，duang，一个网页就出现在我们面前了。一切都显得那么简单直接。<br>然而，“输入一个域名并敲击回车”，和“网页出现在我们面前”，这两件事之间其实已经发生了很多事情。当我们输入了域名之后，浏览器是不知道这个域名对应的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">ip地址</a>的，因此浏览器会将域名打包发送给一个特殊的服务器，我们称之为DNS（域名服务器）。DNS会查找自己的数据库，在找到该域名对应的服务器ip地址后，将这个ip地址返回给浏览器。浏览器再根据这个ip地址，向该网站真正的服务器发送请求。网站服务器收到请求后，将网页需要的文件再返回给浏览器，浏览器就能根据这些文件构筑出一个网站了。<br>也就是说，整个流程其实是：  </p>
+<ol>
+<li>输入域名</li>
+<li>浏览器发送请求给DNS</li>
+<li>DNS返回网站服务器ip</li>
+<li>浏览器发送请求给网站服务器</li>
+<li>网站服务器返回文件给浏览器</li>
+<li>浏览器根据这些文件构筑网站</li>
+</ol>
+<p>当然，现在的网站上有非常多的内容，大流量的网站需要考虑的问题也更多，这个原理仅仅只是最基本的内容，主要是用来辅助我们理解我们需要的东西的。<br>从这个流程当中，可以看出，我们需要以下几个东西：  </p>
+<ol>
+<li>网站域名</li>
+<li>DNS域名解析服务</li>
+<li>网站服务器<h4 id="注册域名和租赁服务器"><a href="#注册域名和租赁服务器" class="headerlink" title="注册域名和租赁服务器"></a>注册域名和租赁服务器</h4>网站域名是由一些域名注册管理机构管理的，如果我们想要拥有一个自己的域名，就需要向域名注册商租用域名的使用权。比较有名的域名注册商之一是<a target="_blank" rel="noopener" href="https://www.godaddy.com/">Godaddy</a>，很多读者们比较熟悉的公司，例如<a target="_blank" rel="noopener" href="https://domains.google/">谷歌</a>，<a target="_blank" rel="noopener" href="https://dnspod.cloud.tencent.com/">腾讯</a>等等也都有提供域名注册服务。<br>网站服务器也是类似的处理方式，需要你去一些服务器租赁商那里租用服务器。真正的服务器往往大而笨重，花费会非常高。而对于大部分的用户来说，他们的网站很小，很多时候用不到那么多的流量和性能。因此，不少厂商推出了一种新的租赁服务器的方式，也就是VPS（虚拟私人服务器）。这种服务器并非真正的物理服务器，而是通过软件的手段分享了真正的服务器的资源，从而大幅度的降低了租赁服务器的门槛。比较出名的提供VPS服务的厂商有<a target="_blank" rel="noopener" href="https://www.vultr.com/">Vultr</a>，<a target="_blank" rel="noopener" href="https://www.digitalocean.com/">DigitalOcean</a>，<a target="_blank" rel="noopener" href="https://www.linode.com/">Linode</a>，如果你偏爱大厂的话，也可以选择<a target="_blank" rel="noopener" href="https://cloud.google.com/">谷歌</a>，<a target="_blank" rel="noopener" href="https://aws.amazon.com/">亚马逊</a>。这种虚拟化的好处还有很多，在此不继续赘述，有兴趣的同学可以自行查阅相关资料拓展阅读。<br>除了真的去租用一个服务器以外，还有不少更懒的方式去托管个人网站，其中不少还是免费的。有些网站例如<a target="_blank" rel="noopener" href="https://www.netlify.com/">Netlify</a>，不仅可以免费托管静态网站，还能顺便帮你解决域名解析的问题，可以说是个人网站的福音了。不过，各方面综合考量的话我则是推荐<a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>，这个博客目前就是托管在GitHub Pages上的，具体的实现方式见后文。<br>那么域名解析服务呢？刚才我们提到过，浏览器需要DNS服务器的帮助才能把域名转化为真正的服务器ip地址，这就是域名解析服务。有一些域名注册商会顺带包揽域名解析服务，但如果你想使用自己另外找的域名解析服务，也是完全可以的。在域名注册商那里购买域名的时候会注册一个账户，登录这个账户就可以管理你的域名了。域名管理包括许多功能，其中一个必要的功能就是设置域名解析服务。</li>
+</ol>
+<h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>域名，是平时人们所说的“网址”的专业称呼。我们平时所见到的域名经常以<code>.com</code>，<code>.org</code>，<code>.cn</code>等等结尾。这些域名的“小尾巴”其实有一个统一的称呼，叫做“顶级域名”。为什么说它“顶级”呢？举个例子，<code>bilibili.com</code>和<code>google.com</code>，同属于<code>.com</code>域名，<code>.com</code>是顶级域名，而<code>bilibili.com</code>和<code>google.com</code>就是所谓的“二级域名”。在域名注册商那里，我们一般能买到的，就是这种二级域名。顶级域名理论上有给网站粗略分类的功能，例如<code>.com</code>商用，<code>.org</code>非盈利组织，以及<code>.cn</code>，<code>.uk</code>等等国家域名。但是实际使用的时候并没有做非常严格的区分，除了一些特殊情况，例如<code>.gov</code>就属于美国政府。<br>以此类推，<code>www.bilibili.com</code>和<code>app.bilibili.com</code>就可以被称为“三级域名”。需要注意的是，虽然他们两个都从属于“bilibili.com”这个二级域名，但是这三个域名可以指向完全不同的三个服务器。有些同学可能会问了，我输入<code>www.bilibili.com</code>的时候，浏览器自动跳转到了<code>bilibili.com</code>，这难道不是说明这两个域名都是指向同一个服务器吗？  </p>
+<h4 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h4><p>这就需要我们对于“域名解析”这件事情有更细节的了解了。域名解析本质上就是一个表格，每一行就是一个记录（record），左边是域名，中间是记录类型（record type），右边是其他域名或者服务器ip地址。记录类型常见的有两种，“A record”直接指向服务器ip地址，而“CNAME record”则是指向其他域名。以本博客的域名<code>shao11.com</code>为例：  </p>
+<table>
+<thead>
+<tr>
+<th>域名</th>
+<th>记录类型</th>
+<th>域名/IP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>shao11.com</td>
+<td>A record</td>
+<td>222.222.222.222</td>
+</tr>
+<tr>
+<td>blog.shao11.com</td>
+<td>A record</td>
+<td>33.33.33.33</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.shao11.com/">www.shao11.com</a></td>
+<td>CNAME</td>
+<td>@</td>
+</tr>
+<tr>
+<td>me.shao11.com</td>
+<td>CNAME</td>
+<td>blog.shao11.com</td>
+</tr>
+</tbody></table>
+<p>在以上的表格中我们就能看出，<code>shao11.com</code>指向的是<code>222.222.222.222</code>，这是一个“A record”，代表着域名<code>shao11.com</code>所指向的服务器ip是<code>222.222.222.222</code>。同理，<code>blog.shao11.com</code>则指向的是另一个ip地址<code>33.33.33.33</code>。如果说到这里都很好懂的话，这个第三行的<code>@</code>可能会让你有些费解。“CNAME record”正如之前所说，是由一个域名指向另一个域名，第四行的<code>me.shao11.com</code>指向<code>blog.shao11.com</code>就是一个很好的例子。而在这里，<code>@</code>是一个约定俗成的符号，指的是“老大”<code>shao11.com</code>。</p>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><h4 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h4><p>服务器本质上和PC（个人电脑）是同样的架构，都是由CPU，内存和硬盘组成。理论上，你可以利用家庭宽带用你自己的电脑架设宽带。然而，这样做有很多问题，其中最致命的一个就是家庭宽带分配的ip地址不是固定的。此外，个人电脑故障死机，更新自动重启等等风险都比租用服务器高得多，更重要的是，一旦网站的流量达到一定程度，家庭带宽也不一定负担的起。所以我们一般会向一些服务器提供商租赁服务器来架设我们的网站。<br>假设你已经在上述的某个网站租赁了一台服务器或者VPS，拿到了专属的ip地址，我们登录管理系统，修改“DNS record”让我们的域名指向这个ip地址，事情显得似乎大功告成了？我们打开浏览器，输入我们的域名，浏览器开始转圈，经过很长一段时间之后（也有可能是立刻），浏览器给你报了个错：<code>ERR_CONNECTION_REFUSED</code>(或者是别的错误，这个有可能和客户端使用浏览器以及服务器用的操作系统有关系)。<br>嘿呀，静下心来，你仔细一想，发现了一个问题：服务器只是一个电脑，换句话说，如果它上面没有运行相应的软件，那它和你家里那台小笔记本没有任何区别，并且你还摸不到它。<br>这就涉及到一些更加硬核的操作部分了，如果没有计算机相关的经验，并且只是想建一个普通的，没有特殊功能的静态网站的话，我更推荐各位跳过下面的部分，直接阅读托管相关的内容；但是，如果你并不想止步于只是建一个展示确定内容的网站，而是有高级交互功能，比如能够创建账户，存储用户信息的话，使用服务器是一个避不过的坎，那我建议你仔细阅读下面的内容。  </p>
+<h4 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h4><p>如果要建造一个网站的话，服务器一般需要安装这些软件：  </p>
+<ul>
+<li>操作系统（OS）：例如<a target="_blank" rel="noopener" href="https://www.linux.org/">Linux</a>，<a target="_blank" rel="noopener" href="http://www.windowsserver.com/">Windows Server</a></li>
+<li>网页服务器（Web Server）：例如<a target="_blank" rel="noopener" href="https://httpd.apache.org/">Apache</a>，<a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a></li>
+<li>脚本语言（Script）：例如<a target="_blank" rel="noopener" href="https://www.php.net/">PHP</a>，<a target="_blank" rel="noopener" href="https://www.javascript.com/">Javascript</a></li>
+<li>数据库（Database）：例如<a target="_blank" rel="noopener" href="https://www.mysql.com/">MySQL</a>，<a target="_blank" rel="noopener" href="https://www.postgresql.org/">PostgreSQL</a></li>
+</ul>
+<p>需要注意的是，操作系统在租赁VPS的时候一般就需要选择了。大部分的人们会选择Linux作为服务器的操作系统，因为Linux不仅开源免费，而且有大量的社群维护，安全性和稳定性都有保障。然而，Linux操作系统本身是非常精简的，所以一般人安装使用的是类似于“整合包”一样的东西，在Linux的世界里称为“发行版”。而在所有的发行版当中，<a target="_blank" rel="noopener" href="https://ubuntu.com/">Ubuntu</a>是比较方便的一个，此后的文章默认服务器使用的是Ubuntu操作系统。<br>脚本语言则是帮助你的网页实现一些特殊的功能。例如，如果你想要写一个网页用来代替骰子roll点，你就可以用Javascript写一个生成随机数的function，然后用HTML/CSS写一个UI出来。脚本语言有非常多的用途和用法，并非这篇文章能概括的内容，如果感兴趣的话可以专门去学习。<br>至于数据库，对于个人建站的同学们来说，除非你是想建那种有很多内容和数据需要展示和更新的那种网站，例如steam游戏数据之类的，否则对于新手而言，这个部分基本上是不用考虑的。和脚本语言一样，数据库相关的内容也脱离了这篇文章的范围，感兴趣的同学需要专门去学习。  </p>
+<h4 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h4><p>那么，既然我们无法物理意义上接触我们租赁的VPS，我们应该如何使用我们的VPS呢？这个时候就需要一些专门的工具出场了，这个工具我们称为SSH（安全外壳协议）。我推荐使用的的SSH客户端叫做<a target="_blank" rel="noopener" href="https://www.putty.org/">PuTTY</a>。打开PuTTY，输入你的VPS的IP地址，用户名和密码，在你面前展现的就是一个纯粹由字符组成的交互界面，和Windows的命令行长得很像。或许你曾经有所耳闻，Linux系统虽然很多发行版都自带GUI（用户图形界面），但Linux最“硬核”的用法是使用这种的“命令行”，输入各种纯文本命令。关于SSH和Ubuntu的各种命令，我计划之后另外专门开一篇文章来解释，如果你看到这里的话，还请暂时在互联网上寻找相关的资源。<br>现在我们有了操作系统，就可以在操作系统上安装“网页服务器”软件了。这一块的软件有很多选择，其本质就是持续在服务器上运行，监听网页（http/https）请求，一旦收到，就把相应的文件传给用户。<code>http</code>和<code>https</code>在计算机上都有默认的端口，如果把服务器比作楼房，ip就是邮政地址，端口(port)就是楼房里房间的门牌号。<code>http</code>对应的默认端口是<code>80</code>，而<code>https</code>则是<code>443</code>。当然，这些只是默认的端口，你可以修改设置让网页服务器在任意端口监听，但是相应的，域名也需要在后面添加对应的端口，例如<code>https://shao11.com:2048</code>。    </p>
+<h3 id="托管"><a href="#托管" class="headerlink" title="托管"></a>托管</h3><h4 id="概览-1"><a href="#概览-1" class="headerlink" title="概览"></a>概览</h4><p>托管本质上和普通的建站是一样的，只不过首先你的网站得是静态的，其次你使用的不是自己的VPS，而是一些公司的服务器。自然，用户得通过这些公司提供的交互页面对“服务器”进行管理，而这种交互的限制是远远高于VPS的。但同样的，托管也是一种相对于租赁服务器简单的多的多的方法，并且很多网站托管服务并不收费。有些人可能会对这种天上掉馅饼一样的机会有所警觉，然而其实这个馅饼是有原因的。打一个不太恰当的比喻，静态网站托管提供的是类似网络云盘一样的“在线存储”的服务。静态网站背后一般来说是没有数据库支持的，所以也不需要消耗太多的服务器计算资源，因此静态网站的成本基本上就是存储和网络流量的成本。而现在硬盘价格低廉，存储的成本其实并不高，而许多使用托管服务的小网站的访问量也小的可怜，因此网络流量的成本也几乎可以忽略不计。所以，市面上才有这么一些提供免费托管的服务商。  </p>
+<h4 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h4><p>除了我上面提过的两家服务商以外，还有<a target="_blank" rel="noopener" href="https://about.gitlab.com/product/pages/">GitLab</a>，<a target="_blank" rel="noopener" href="https://firebase.google.com/">Google Firebase</a>等等，读者可以搜索“static website hosting”获取更多信息。<br>关于具体如何使用托管服务，各家的服务略有差异，流程也不太一样。我计划之后写一篇关于GitHub Pages的文章，现在的话关于托管的内容我们就先讲到这里。</p>
+<h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><h4 id="概览-2"><a href="#概览-2" class="headerlink" title="概览"></a>概览</h4><p>终于，我们来到了框架的部分。相信有一部分读者应该学习过基础的HTML和CSS，如果没有学过也没关系，这俩的全名叫做“超文本标记语言”和“层叠样式表”。这俩的主要功能，一个是记录网页的内容和对不同的内容进行标记和分类；另一个则是针对不同的内容，对其应用不同的样式，例如字体大小，颜色，背景，外框。这两个语言，加上我们之前提到的脚本语言，构成了绝大部分我们今天看到的网站。然而，实际上手这两个语言我们就会发现，这两个语言及其简单和繁琐。说它简单，是因为其概念十分简洁，无非就是对内容进行标记和对标记的内容进行样式调整；说它繁琐，是因为在实现复杂的功能的时候，需要大量的调整和实验。尤其是CSS，其内部的有许许多多的样式属性，而不同的样式属性搭配经常会带来一些无法预测的效果，这对于开发来说其实特别麻烦。<br>因此，有一部分工程师决定把它们开发的一些功能封装起来，打包以供其他工程师使用。如果这个包只是实现了一两个功能，我们一般称之为“插件”，“包”；而如果这些功能足够全面，覆盖了开发所需要的大部分内容，那我们会称之为“框架”。<br>关于使用框架，这里说句题外话。有些人会有一些误区，认为所有东西都是要自己写才好，使用框架是偷懒的行为。这句话本身其实没有错误，但是毕竟身为开发者，时间和精力总是有限的，我们需要关注的是如何尽量快和方便的实现我们的项目。从另一个角度来说，从计算机硬件逻辑门到最终用户实现，这之中经过了很多层框架和虚拟化，如果有时间和兴趣的话能够全面探索整个流程当然是好事，但是如果只是为了简单的开发一个项目的话，能够尽快的掌握一个框架所有的接口就会有意义的多。<br>话又说回来，许多软件框架是有“寿命”的，一些以前大家都喜欢使用的框架，一转眼就可能被新的更好的框架所取代。因此，在熟练掌握框架接口之余，研究框架具体的实现方式，关注同类框架的新动向，及时更新技能，才能不被时代所淘汰。  </p>
+<h4 id="框架一览"><a href="#框架一览" class="headerlink" title="框架一览"></a>框架一览</h4><p>框架分很多种，例如这个博客目前使用的框架就是<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>，这个框架可以帮助用户在本地方便的的编辑和预览博客网站，然后将编辑过的内容编译成静态网站然后部署到指定的环境中。<br>预计这一部分以后会更新各个框架使用方式的博文并附上链接，目前这里还是空的，以后再来看看吧。</p>
+<h3 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h3><p>架设网站的原理和应用，远非这篇文章所能容纳的内容。这篇文章除了尽量简单的整合了关于建站的原理和流程的信息以外，其实也有本人自己整理所学到的内容的意思。因此这篇文章难免会有不正确乃至错误的部分，还望各位读者海涵。若是有兴趣指出问题，还请不吝通过邮箱联系本人。<br>另外，这篇文章应该会长期保持更新，如果要引用请尽量注明引用时间和原文地址链接，不胜感激！</p>
+
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.z" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
+        
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
+    </a>
+  </div>
+
+
+    
+
+  </footer>
+</article>
+
+
+
+
+
+
+
+          <div class="main-footer">
+  
+    © 2021 Elysium - Powered by <a href="http://hexo.io" target="_blank">Hexo</a> - Theme <a href="https://github.com/denjones/hexo-theme-chan" target="_blank">Chan</a>
+  
+</div>
+
+      
+        </div>
+      
+    </div>
+  </div>
+  
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/PhotoSwipe/photoswipe.css">
+
+  
+<link rel="stylesheet" href="/PhotoSwipe/default-skin/default-skin.css">
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<script src="/PhotoSwipe/photoswipe.js"></script>
+
+  
+<script src="/PhotoSwipe/photoswipe-ui-default.js"></script>
+
+
+
+
+<script src="/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
+
+
+<script src="/scripts/main.js"></script>
+
+
+</body>
+</html>
